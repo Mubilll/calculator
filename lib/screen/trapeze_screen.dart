@@ -64,6 +64,18 @@ class _TrapezeScreenState extends State<TrapezeScreen> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controller1.updateValue(0);
+    controller1.text = "";
+    controller2.updateValue(0);
+    controller2.text = "";
+    controller3.updateValue(0);
+    controller3.text = "";
+    controller4.updateValue(0);
+    controller4.text = "";
+  }
 
   @override
   Widget build(BuildContext context) {

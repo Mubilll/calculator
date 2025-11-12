@@ -55,6 +55,16 @@ class _ParallelogramScreenState extends State<ParallelogramScreen> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controller1.updateValue(0);
+    controller1.text = "";
+    controller2.updateValue(0);
+    controller2.text = "";
+    controller3.updateValue(0);
+    controller3.text = "";
+  }
 
   @override
   Widget build(BuildContext context) {

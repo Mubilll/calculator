@@ -46,6 +46,15 @@ class _TriangleScreenState extends State<TriangleScreen> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controller1.updateValue(0);
+    controller1.text = "";
+    controller2.updateValue(0);
+    controller2.text = "";
+  }
+
 
   @override
   Widget build(BuildContext context) {

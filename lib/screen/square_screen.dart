@@ -15,7 +15,8 @@ class _SquareScreenState extends State<SquareScreen> {
   final MoneyMaskedTextController controller =MoneyMaskedTextController(
     thousandSeparator: ".",
     precision: 0,
-    decimalSeparator: ""
+    decimalSeparator: "",
+    initialValue: 0
   );
 
   double hasilLuas = 0;
@@ -37,6 +38,12 @@ class _SquareScreenState extends State<SquareScreen> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controller.updateValue(0);
+    controller.text = "";
+  }
 
   @override
   Widget build(BuildContext context) {

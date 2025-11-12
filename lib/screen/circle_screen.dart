@@ -42,6 +42,12 @@ class _CircleScreenState extends State<CircleScreen> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controller.updateValue(0);
+    controller.text = "";
+  }
 
   @override
   Widget build(BuildContext context) {
