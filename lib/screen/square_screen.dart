@@ -16,7 +16,6 @@ class _SquareScreenState extends State<SquareScreen> {
     thousandSeparator: ".",
     precision: 0,
     decimalSeparator: "",
-    initialValue: 0
   );
 
   double hasilLuas = 0;
