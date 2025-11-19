@@ -105,9 +105,13 @@ class _RhombusScreenState extends State<RhombusScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_rhombus.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_rhombus.png",
+
+                child: Image.asset(
+                  "assets/images/ic_rhombus.png",
+                  width: 120,
+                ),
               ),
 
               Text(

@@ -95,9 +95,13 @@ class _RectangleScreenState extends State<RectangleScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_rectangle.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_rectangle.png",
+
+                child: Image.asset(
+                  "assets/images/ic_rectangle.png",
+                  width: 120,
+                ),
               ),
 
               Text(

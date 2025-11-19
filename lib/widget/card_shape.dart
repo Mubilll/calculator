@@ -33,8 +33,11 @@ class CardShape extends StatelessWidget {
           spacing: 15,
           children: [
             Expanded(
-              child: Image.asset(
-                image,
+              child: Hero(
+                tag: image,
+                child: Image.asset(
+                  image,
+                ),
               ),
             ),
 

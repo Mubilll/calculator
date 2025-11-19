@@ -105,9 +105,13 @@ class _ParallelogramScreenState extends State<ParallelogramScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_parallelogram.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_parallelogram.png",
+
+                child: Image.asset(
+                  "assets/images/ic_parallelogram.png",
+                  width: 120,
+                ),
               ),
 
               Text(

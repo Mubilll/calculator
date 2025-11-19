@@ -88,9 +88,13 @@ class _CircleScreenState extends State<CircleScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_circle.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_circle.png",
+
+                child: Image.asset(
+                  "assets/images/ic_circle.png",
+                  width: 120,
+                ),
               ),
 
               Text(

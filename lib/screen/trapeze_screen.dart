@@ -116,9 +116,13 @@ class _TrapezeScreenState extends State<TrapezeScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_trapeze.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_trapeze.png",
+
+                child: Image.asset(
+                  "assets/images/ic_trapeze.png",
+                  width: 120,
+                ),
               ),
 
               Text(

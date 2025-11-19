@@ -83,9 +83,13 @@ class _SquareScreenState extends State<SquareScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_square.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_square.png",
+
+                child: Image.asset(
+                  "assets/images/ic_square.png",
+                  width: 120,
+                ),
               ),
 
               Text(

@@ -122,9 +122,13 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_calculator.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_calculator.png",
+
+                child: Image.asset(
+                  "assets/images/ic_calculator.png",
+                  width: 120,
+                ),
               ),
 
               Text(

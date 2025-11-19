@@ -95,9 +95,13 @@ class _TriangleScreenState extends State<TriangleScreen> {
 
           child: Column(
             children: [
-              Image.asset(
-                "assets/images/ic_triangle.png",
-                width: 120,
+              Hero(
+                tag: "assets/images/ic_triangle.png",
+
+                child: Image.asset(
+                  "assets/images/ic_triangle.png",
+                  width: 120,
+                ),
               ),
 
               Text(
